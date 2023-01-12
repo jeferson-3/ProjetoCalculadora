@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body{
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#Cal{
+  width: 400px;
+  padding: 2em;
+  background-color: #141413;
+  color: rgb(199, 185, 242);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+#Cal h3{
+  background: rgb(225, 225, 225);
+  width: 5.7em;
+  text-align: center;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: rgb(11, 145, 242);
+}
+
+#operations{
+  text-align: right;
+  
+}
+
+#previous-operation, 
+#current-operation{
+  min-height: 1.6em;
+  overflow-wrap: break-word;
+  padding: 0.2em;
+}
+
+#previous-operation{
+  color: rgb(171, 170, 223);
+}
+
+#current-operation{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#buttons-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttons-container button{
+  border: 1px solid transparent;
+  border-radius: 3rem;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #2b2626;
+  color: white;
+  cursor: pointer;
+}
+
+#buttons-container .number{
+  background-color: #f3f3f3;
+  color: black;
+}
+
+#buttons-container button:hover {
+  background-color: #bababa;
+  color: black;
+  border-color: #999;
+}
+
+#buttons-container #equal-btn{
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+#buttons-container #equal-btn:hover{
+  background-color: #3a91d8;
+}
